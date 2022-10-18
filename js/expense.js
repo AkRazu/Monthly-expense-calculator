@@ -1,3 +1,4 @@
+// function of getting input value
 function getValue(expanses) {
   const inputId = document.getElementById(expanses + "-amount");
   const inputValue = parseInt(inputId.value);
@@ -20,4 +21,17 @@ document.getElementById("calculate-btn").addEventListener("click", function () {
   totalExpansesAmount.innerText = expansesAmount;
   const income = incomeAmount - expansesAmount;
   blance.innerText = income;
+});
+
+// saving amount section
+document.getElementById("save-btn").addEventListener("click", function () {
+  const savingValue = getValue("saving");
+  const balance = document.getElementById("balance-amount").innerText;
+//   const balanceText = parseInt(balance.innerText);
+  const savingMoney = savingValue % balance;
+
+  const savingAmount = document.getElementById("saving-amount") ;
+  savingAmount.innerText = savingMoney;
+  console.log(savingMoney);
+  const remainingAmount = document.getElementById("remaining-amount");
 });
