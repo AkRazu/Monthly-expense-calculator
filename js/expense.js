@@ -30,10 +30,14 @@ document.getElementById("save-btn").addEventListener("click", function () {
   const balance = document.getElementById("balance-amount").innerText;
   const balanceNumber = parseInt(balance);
 
+  const remainAmount = document.getElementById("remaining-amount");
   const SavingAmount = document.getElementById("my-amount");
 
   const totalNumber = (balanceNumber * SavingValue) / 100;
   SavingAmount.innerText = totalNumber;
 
-  console.log(totalNumber);
+  const totalBalance = balanceNumber - totalNumber;
+  remainAmount.innerText = totalBalance;
+
+  console.log(totalBalance);
 });
