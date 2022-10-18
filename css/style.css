@@ -1,0 +1,15 @@
+.first-section ,.second-section{
+}
+/* Label  */
+label {
+  font-weight: 500;
+  width: 90px;
+  display: inline-block;
+}
+/* input field */
+.input-field {
+  background-color: gainsboro;
+  border-radius: 2px;
+  outline: 0;
+}
+
