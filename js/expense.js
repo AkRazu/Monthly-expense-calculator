@@ -25,13 +25,15 @@ document.getElementById("calculate-btn").addEventListener("click", function () {
 
 // saving amount section
 document.getElementById("save-btn").addEventListener("click", function () {
-  const savingValue = getValue("saving");
-  const balance = document.getElementById("balance-amount").innerText;
-//   const balanceText = parseInt(balance.innerText);
-  const savingMoney = savingValue % balance;
+  const SavingValue = getValue("saving");
 
-  const savingAmount = document.getElementById("saving-amount") ;
-  savingAmount.innerText = savingMoney;
-  console.log(savingMoney);
-  const remainingAmount = document.getElementById("remaining-amount");
+  const balance = document.getElementById("balance-amount").innerText;
+  const balanceNumber = parseInt(balance);
+
+  const SavingAmount = document.getElementById("my-amount");
+
+  const totalNumber = (balanceNumber * SavingValue) / 100;
+  SavingAmount.innerText = totalNumber;
+
+  console.log(totalNumber);
 });
