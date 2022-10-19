@@ -19,35 +19,35 @@
   <body>
     <!-- Heading section -->
     <section>
-      <h1 class="text-center my-1 text-secondary ">
-        💰 Monthly Expense 💰
-      </h1>
+      <h1 class="text-center my-1 text-secondary">💰 Monthly Expense 💰</h1>
     </section>
     <!-- Main section start -->
-    <main class="">
-      <section class="container-fluid row p-5">
+    <main class="container">
+      <section class="row row-cols-md-2 p-0 m-0 p-md-5">
         <!-- First section start -->
-        <div class="col-md-6 first-section">
+        <div class="first-section">
           <img class="image-bg img-fluid" src="image/background.jpg" alt="" />
-          <div class="bg-info mt-5 rounded-3 p-md-2">
-            <h1 class="text-center">Saving Amount: $ <span id="total-amount">0</span></h1>
+          <div class="bg-info mt-5 rounded-3 p-2">
+            <h1 class="text-center">
+              Saving Amount: $ <span id="total-amount">0</span>
+            </h1>
           </div>
         </div>
-        
 
         <!-- second section start -->
-        <div
-          class="col-md-6 bg-light d-flex justify-content-center align-items-md-center second-section rounded-md-4"
-        >
-          <div class="mt-md-4" >
+        <div class="bg-light second-section rounded-md-4">
+          <div class="mt-md-4">
             <div>
               <h5 class="text-center">Income</h5>
             </div>
             <!-- Income input section -->
-            <div>
-              <label class="text-md-end me-2" for="">Income:</label>
-              <input id="income-amount"
-                class="border-0 p-2 input-field"
+            <div class="d-flex">
+              <label class="fw-bold col-sm-2 col-form-label" for=""
+                >Income:</label
+              >
+              <input
+                id="income-amount"
+                class="form-control"
                 type="text"
                 placeholder="Enter your income"
               />
@@ -57,63 +57,85 @@
             </div>
             <!-- Food input section -->
             <div>
-              <div class="mt-3">
-                <label class="text-md-end me-2" for="">Food:</label>
-                <input id="food-amount"
-                  class="border-0 p-2 input-field"
+              <div class="d-flex">
+                <label class="fw-bold col-sm-2 col-form-label" for=""
+                  >Food:</label
+                >
+                <input
+                  id="food-amount"
+                  class="form-control"
                   type="text"
                   placeholder="Food expense"
                 />
               </div>
               <!-- Rend input section -->
-              <div class="mt-3">
-                <label class="text-md-end me-2" for="">Rent:</label>
-                <input id="rent-amount"
-                  class="border-0 p-2 input-field"
+              <div class="mt-3 d-flex">
+                <label class="fw-bold col-sm-2 col-form-label" for=""
+                  >Rent:</label
+                >
+                <input
+                  id="rent-amount"
+                  class="form-control"
                   type="text"
                   placeholder="Rent expense"
                 />
               </div>
               <!-- clothes input section -->
-              <div class="mt-3">
-                <label class="text-md-end me-2" for="">Clothes:</label>
-                <input id="cloth-amount"
-                  class="border-0 p-2 input-field"
+              <div class="mt-3 d-flex">
+                <label class="fw-bold col-sm-2 col-form-label" for=""
+                  >Clothes:</label
+                >
+                <input
+                  id="cloth-amount"
+                  class="form-control"
                   type="text"
                   placeholder="Clothes expense"
                 />
               </div>
             </div>
             <!-- Calculate button section -->
-            <div class="d-flex justify-content-center mt-3">
-              <button id="calculate-btn" class="btn btn-primary px-5 py-2">Calculate</button>
+            <div class="d-flex justify-content-md-center mt-3">
+              <button id="calculate-btn" class="btn btn-primary px-5 py-2">
+                Calculate
+              </button>
             </div>
             <!-- Total balance section -->
             <div class="m-3">
-              <h5 class="text-center">Total Expenses : $<span id="expense-amount">00</span></h5>
-              <h5 class="text-center">Balance : $<span id="balance-amount">00</span></h5>
+              <h5 class="text-center">
+                Total Expenses : $<span id="expense-amount">00</span>
+              </h5>
+              <h5 class="text-center">
+                Balance : $<span id="balance-amount">00</span>
+              </h5>
             </div>
             <!-- saving section -->
-            <div class="d-md-flex justify-content-around">
-              <div class="d-flex align-items-center">
-                <label class="" for="">Save:</label>
-              </div>
-              <input id="saving-amount"
-                class="border-0 text-center w-auto input-field d-md-inline-block"
-                type="text"
-                placeholder="00"
-              />
-              <div class="d-flex justify-content-center align-items-center">
-                <p class="px-md-3 fs-5">%</p>
+            <div class="row mb-3">
+              <label class="fw-bold col-2 col-form-label" for=""
+                >Save:</label
+              >
+              <div class="col-5">
+                <input
+                  id="saving-amount"
+                  class="form-control"
+                  type="text"
+                  placeholder="00"
+                />
               </div>
               <!-- save button -->
-              <div class="d-flex justify-content-center">
-                <button id="save-btn" class="btn btn-primary px-5 py-2">Save</button>
+              <div class="col-sm-5 d-flex justify-content-around">
+                <span>%</span>
+                <button id="save-btn" class="btn btn-primary px-5 py-2">
+                  Save
+                </button>
               </div>
             </div>
             <div class="m-3">
-              <h5 class="text-center">Saving Amount : $<span id="my-amount">00</span></h5>
-              <h5 class="text-center">Remaining Balance: $<span id="remaining-amount">00</span></h5>
+              <h5 class="text-center">
+                Saving Amount : $<span id="my-amount">00</span>
+              </h5>
+              <h5 class="text-center">
+                Remaining Balance: $<span id="remaining-amount">00</span>
+              </h5>
             </div>
           </div>
         </div>
