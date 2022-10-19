@@ -5,7 +5,7 @@ function getValue(expanses) {
   if (inputValue > 0) {
     return inputValue;
   } else if (isNaN) {
-    alert("Please enter the number value ❌");
+    alert("⛔️ value is NOT a number");
   }
 }
 
@@ -37,12 +37,10 @@ document.getElementById("save-btn").addEventListener("click", function () {
   const totalNumber = (balanceNumber * SavingValue) / 100;
   const totalBalance = balanceNumber - totalNumber;
 
-  if (isNaN != "") {
+  if(getValue("saving") > 0){
     SavingAmount.innerText = totalNumber;
     remainAmount.innerText = totalBalance;
     totalAmount.innerText = totalNumber;
-    alert('Your Amount is added ✅')
-  } else {
-    alert("Please enter the correct amount ❌");
-  }
+    alert("Amount is added ✅");
+}
 });
