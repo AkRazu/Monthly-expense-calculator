@@ -2,10 +2,9 @@
 function getValue(expanses) {
   const inputId = document.getElementById(expanses + "-amount");
   const inputValue = parseInt(inputId.value);
+  const vaidCheck = document.getElementById('valid-number');
   if (inputValue > 0) {
     return inputValue;
-  } else if (inputValue < 0) {
-    alert("❌ value is NOT valid number");
   } else if (isNaN) {
     alert("❌ value is NOT a number");
   }
