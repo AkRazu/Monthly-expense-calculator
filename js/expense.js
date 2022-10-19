@@ -5,7 +5,7 @@ function getValue(expanses) {
   if (inputValue > 0) {
     return inputValue;
   } else if (isNaN) {
-    alert("⛔️ value is NOT a number");
+    alert("❌ value is NOT a number");
   }
 }
 
