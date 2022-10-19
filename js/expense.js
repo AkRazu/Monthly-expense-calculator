@@ -4,6 +4,8 @@ function getValue(expanses) {
   const inputValue = parseInt(inputId.value);
   if (inputValue > 0) {
     return inputValue;
+  } else if (inputValue < 0) {
+    alert("❌ value is NOT valid number");
   } else if (isNaN) {
     alert("❌ value is NOT a number");
   }
@@ -37,10 +39,10 @@ document.getElementById("save-btn").addEventListener("click", function () {
   const totalNumber = (balanceNumber * SavingValue) / 100;
   const totalBalance = balanceNumber - totalNumber;
 
-  if(getValue("saving") > 0){
+  if (getValue("saving") > 0) {
     SavingAmount.innerText = totalNumber;
     remainAmount.innerText = totalBalance;
     totalAmount.innerText = totalNumber;
     alert("Amount is added ✅");
-}
+  }
 });
